@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="images/logo-removebg-preview-2.png" id="logo" alt="imagen">
+            </div>
+            <div class="header-txt">
+                <h1>Unete al futuro</h1>
+            </div>
+
+            <div class="menu container">
+                <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+                <nav class="navbar " id="nav">
+                    <ul class="menu-list">
+                        <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-circle-fill"></i></button>
+
+                        <li><a href="#" class="link">Inicio</a></li>
+                        <li><a href="#" class="link">Productos</a></li>
+                        <li><a href="#footer" class="link">Contacto</a></li>
+                        <li><button id="abrirCarrito" class="abrir-carrito"><i class="bi bi-cart4"></i></button></li>
+                        <div class="submenu container" id="subMenu">
+                            <div class="haderCarrito">
+                                <h3>Carrito</h3>
+                                <button id="cerrarCarrito" class="cerrar-carrito"><i
+                                        class="bi bi-x-circle-fill"></i></button>
+                            </div>
+                            <div class="carrito">
+                                <p>Cantidad: <span id="cantidadCarrito">0</span> </p>
+                                <p>Total: <span id="totalPrecioCarrito">$0.00</span> </p>
+                            </div>
+                            <div class="conten" id="contenido">
+                                <a href="#" id="vaciar-carrito" class="btn-2">Vaciar </a>
+                            </div>
+                        </div>
+
+            </div>
+            </ul>
+            </nav>
+        </div>
+
+        </div>
+
+
+
+    </header>
+
+
+    <section>
+        <main class="products container" id="lista-1">
+
+
+            <div class="product-content">
+
+
+                <div class="product">
+                    <img class="productP-txt" src="images/1.jpeg" alt="">
+
+                    <img class="productP-txt" src="images/2.jpeg" alt="">
+
+                    <img class="productP-txt" src="images/4.jpeg" alt="">
+
+                </div>
+
+                <div class="product-principal">
+                    <img class="img-principal" src="images/3.png" alt="">
+                </div>
+
+                <div class="producto__contenedor-info">
+
+                    <h1 class="producto__nombre">Apple vision pro.</h1>
+                    <div class="producto__contenedor-propiedad">
+                        <p class="producto__propiedad">Precio</p>
+                        <p class="producto__precio" id="producto-precio">$1500.00</p>
+                    </div>
+
+                    <div class="producto__contenedor-propiedad">
+                        <p class="producto__propiedad">Cantidad</p>
+                        <button class="producto__btn-cantidad" id="disminuir-cantidad">
+                            <i class="bi bi-dash-square-fill"></i>
+                        </button>
+
+                        <input type="text" id="cantidad" value="0" class="producto__cantidad" />
+                        <button class="producto__btn-cantidad" id="incrementar-cantidad">
+                            <i class="bi bi-plus-square-fill"></i>
+                        </button>
+                    </div>
+                    <button type="submit" class="producto__btn-carrito" id="agregar-al-carrito">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            </div>
+    </section>
+
+    <section class="reseña container">
+        <h2>Reseñas de Clientes</h2>
+        <div class="reseñas-contenedor">
+            <div class="reseñas-slider" id="reseñasSlider">
+                <div class="reseña-item">
+                    <h3>Juan Recinos</h3>
+                    <div class="reseña-rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <img class="reseñas" src="images/juan.jpeg" alt="">
+                    <div class="perfiles">
+                        
+                        <p>¡El producto es increíble! Superó todas mis expectativas, definitivamente volveré a comprar
+                            aquí.</p>
+                    </div>
+                </div>
+                <div class="reseña-item">
+                    <h3>Elias Polio</h3>
+                    <div class="reseña-rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <img class="reseñas" src="images/poli.jpeg" alt="">
+                    <div class="perfiles">
+                        <p>El producto está bien, pero el envío tomó más tiempo de lo esperado. Aún así, estoy
+                            satisfecho.</p>
+                    </div>
+                </div>
+                <div class="reseña-item">
+                    <h3>Luis Perez</h3>
+                    <div class="reseña-rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <img class="reseñas" src="images/levi.jpeg" alt="">
+                    <div class="perfiles">
+                        
+                        <p>Producto de excelente calidad. Lo recomiendo 100%, vale cada centavo.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="prev" id="prevBtn">&#10094;</button>
+            <button class="next" id="nextBtn">&#10095;</button>
+        </div>
+    </section>
+     
+    <section class="videos-review">
+        <div class="views-video">
+            <video muted autoplay loop>
+                <source src="videos/reviews.mp4"  type="video/mp4">
+            </video>
+        </div>
+        <div class="views-video">
+            <video muted autoplay loop>
+                <source src="videos/reviews2.mp4"  type="video/mp4">
+            </video>
+        </div>
+    </section>
+    
+
+    <section class="producto-descripcion container">
+        <div class="descripcion">
+            <h3>Apple Vision Pro</h3>
+            <p>
+                Equipado con un sistema de cámaras avanzado y un procesador ultrarrápido, este dispositivo
+                está diseñado para integrarse perfectamente en tu vida diaria, mejorando la forma en
+                que interactúas con tu entorno digital y físico.
+            </p>
+        </div>
+        <div class="Beneficios">
+            <h3>Beneficios </h3>
+            <p>
+                El Apple Vision Pro ofrece una experiencia inmersiva sin precedentes, transformando
+                la manera en que los usuarios interactúan con su entorno. Gracias a su interfaz de realidad
+                aumentada, los usuarios pueden disfrutar de contenido digital superpuesto en el mundo real
+                de forma fluida.
+            </p>
+        </div>
+
+    </section>
+
+   
+    
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-content container" id="footer">
+            <div class="link">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://github.com/Luismerino123">Creador</a></li>
+                    <li><a
+                            href="https://www.instagram.com/luis_merinoo?igsh=cXMyZzRhNWU4dG5t&utm_source=qr">Instagram</a>
+                    </li>
+                    <li><a href="https://www.apple.com">Tienda oficial</a></li>
+                </ul>
+            </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/scrip.js"></script>
+</body>
+
+</html>
